@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 180 Degrees Consulting
+> 180 Degrees provides socially conscious organizations around the world with very high quality, extremely affordable consulting services. We work with organizations to  develop innovative, practical and sustainable solutions to whatever challenges they’re facing.
 
-## Getting Started
+## We help organizations to…
 
-First, run the development server:
+- Run the most effective programs possible
+- Measure their social impact
+- Improve their financial sustainability
+- Operate as efficiently as possible, so that donation revenue goes further
+- Be more data-driven in their decision-making
+- Expand to new geographical areas
+- Improve their human resource management and volunteer recruitment
+- Improve their branding and marketing
+- Work out organizational priorities
+- Increase the number of people they are able to help
+- Develop a workable business plan
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Our unique advantage…
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> We’re able to offer very high-quality consulting services without the usual price tag because our consultants are carefully selected top university students with the right combination of expertise, creativity, and problem-solving ability. These consultants work on a volunteer basis because they believe in the work we’re doing. They believe that improving the effectiveness of organizations can make a massive and meaningful difference to the people those organizations serve.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> As such, 180 Degrees connects the untapped capabilities of top university students with the unmet needs of socially conscious organizations. Importantly, the process mutually beneficial. Non-profits, social enterprises, and socially minded businesses get custom solutions to problems they’re facing and university students get work experience, professional training, first-hand exposure to non-profits and social enterprises, real leadership development, and the opportunity to make a difference.
