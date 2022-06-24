@@ -1,15 +1,15 @@
 import {extendTheme,useColorModeValue} from "@chakra-ui/react"
-
+import {mode} from '@chakra-ui/theme-tools';
 const styles = {
     global: props => ({
             body: {
-                bg: mode('#a1a1a1','#202024')(props)
+                bg: mode('#e9ebed','#295d09')(props)
             }
     })
 }
 const config = {
-    initialColorMode: 'light',
-    useSystemColorMode: false,
+    initialColorMode: 'dark',
+    useSystemColorMode: true
 }
 
 const theme = extendTheme({config,styles})
