@@ -1,9 +1,8 @@
-import Logo from './logo'
+
 import NextLink from 'next/link'
 import {Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue} from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-
 const LinkItem = ({ href, path, children}) =>{
     const active = path === href
     const inactiveColor = useColorModeValue('gray2000, whiteAlpha.900')
@@ -27,10 +26,10 @@ const Navbar = props => {
              style={{backdropFilter:'blur(10px)'}}
              zIndex={1}
              {...props}>
-                <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
-                    <Flex align="center" mr={5}>
+                <Container display="flex" p={2} maxW="100%" wrap="wrap" align="center" justify="space-between">
+                    <Flex align="center">
                         <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-                            <Logo/>
+                                180DC - BITM
                         </Heading>
                     </Flex>
 
