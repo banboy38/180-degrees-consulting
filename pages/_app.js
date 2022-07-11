@@ -11,6 +11,7 @@ function Website({ Component, pageProps,router}) {
             <CSSReset/>          
             <Layout router={router}>
                 <AnimatePresence exitBeforeEnter initial={true}>
+                <CSSReset/>  
                     <Component {...pageProps} key ={router.route}/>
                     <Navbar/>
                 </AnimatePresence>

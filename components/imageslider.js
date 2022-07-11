@@ -4,9 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ImageSlider = ({ slides }) => {
   return (
-    // direction="column" justifyContent="center" height={52} position="fixed" paddingX={52} paddingLeft={36} paddingTop="20em"
-    <Container  paddingTop={12} maxWidth="container.lg" borderRadius="md">
-      <Carousel showThumbs={false} infiniteLoop>
+    <Container  paddingTop={12} maxWidth="container.lg" height="3xl" zIndex={0} borderRadius="md">
+      <Carousel showThumbs={false} infiniteLoop autoPlay interval={5000} transitionTime='1500'>
       {slides?.map((slide) => {
         return <Image key="slide" src={slide.image}  alt="images"/>;
         })}

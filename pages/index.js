@@ -10,14 +10,25 @@ const Page = () => {
   return (
     <>
     <div>
+    <Container maxWidth="100%">
+    <div>
     <ImageSlider slides={ImageSliderData}/>
     </div>
-    <div><Container maxWidth="container.xl" paddingTop={12}>
+    
+    <div>
+      <Container padd maxHeight="lg" maxWidth="container.xl">
           <Heading>
               Who we are...
           </Heading>
           <Box maxWidth="container.md" paddingTop={5}>180 Degrees provides socially conscious organizations around the world with very high quality, extremely affordable consulting services. We work with organizations to develop innovative, practical and sustainable solutions to whatever challenges they’re facing.</Box>
-        </Container></div>
+      </Container></div>
+    </Container>
+    <div>
+      <Container paddingTop={10} maxWidth="container.xl">
+        <Heading justifyContent="center">Our Services</Heading>
+      </Container>
+    </div>
+    </div>
     </>
   )
 }
