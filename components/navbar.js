@@ -50,7 +50,7 @@ export default function Navbar() {
       {/* <Image w="200px" h="60px" src="./logo.png" alt='logo'/> */}
         <VStack m={0} p={0} justifyContent="left" gap={2} spacing="2em">
           <Spacer/>        
-          <Container m={0} p={0} transform="rotate(90deg)"><NavLink m={0} p={0}>DASHBOARD</NavLink></Container><Spacer/>
+          <Container m={0} p={0} transform="rotate(90deg)"><NavLink m={0} p={0}>ABOUT</NavLink></Container><Spacer/>
           <Container m={0} p={0} transform="rotate(90deg)"><NavLink m={0} p={0}>TEAM</NavLink></Container><Spacer/>
           <Container m={0} p={0} transform="rotate(90deg)"><NavLink m={0} p={0}>PROJECTS</NavLink></Container><Spacer/>
           <ThemeToggleButton/><Spacer/>
