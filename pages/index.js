@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { Container, Text, useColorMode, Button,IconButton, Box, Stack, Spacer, Heading} from '@chakra-ui/react'
+import { Container, Text, useColorMode, Button,IconButton, Box, Stack, Spacer, Heading, HStack} from '@chakra-ui/react'
 import ThemeToggleButton from '../components/theme-toggle-button'
 import Navbar from '../components/navbar'
 import ImageSlider from '../components/imageslider'
@@ -16,7 +16,7 @@ const Page = () => {
     </div>
     
     <div>
-      <Container padd maxHeight="lg" maxWidth="container.xl">
+      <Container maxHeight="lg" maxWidth="container.xl">
           <Heading>
               Who we are...
           </Heading>
@@ -26,6 +26,7 @@ const Page = () => {
     <div>
       <Container paddingTop={10} maxWidth="container.xl">
         <Heading justifyContent="center">Our Services</Heading>
+        <HStack maxWidth="container.xl" justifyContent="space-around" paddingTop={5}><Box>Hi</Box><Box>Hello</Box><Box>Namaste</Box><Box>Pranam</Box></HStack>
       </Container>
     </div>
     </div>
