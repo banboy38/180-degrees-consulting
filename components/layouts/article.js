@@ -18,7 +18,7 @@ const Layout = ({children,title}) => (
             <>
                 {title && 
                 (<Head>
-                    <title>{title} - roninraj</title>
+                    <title>180DC BITM - {title}</title>
                  </Head>
                 )}
                 {children}
