@@ -5,12 +5,12 @@ import theme from '../libs/theme'
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import Header from "../components/header"
+import Head from "next/head"
 //import {  } from '@chakra-ui/core';
 
 function Website({ Component, pageProps,router}) {
   return (
       <ChakraProvider theme={theme} resetCSS={true}>
-            <CSSReset/>          
             <Layout router={router}>
                 <AnimatePresence exitBeforeEnter initial={true}> 
                     <Header/>

@@ -43,7 +43,7 @@ const Navbar = props => {
   const path = props
   return (
     <>
-      <Flex zIndex={5} m={0} p={0} bg={useColorModeValue("gray.800","gray.900")} direction={{base:'column',md:'row'}} position="fixed" top="0" right="0" h="100%">
+      <Flex display={{base:'none',md:"flex"}} zIndex={5} m={0} p={0} bg={useColorModeValue("gray.800","gray.900")} direction={{base:'column',md:'row'}} position="fixed" top="0" right="0" h="100%">
       {/* <Image w="200px" h="60px" src="./logo.png" alt='logo'/> */}
         <VStack m={0} p={0} justifyContent="left" gap={2} spacing="2em">
           <Spacer/>        

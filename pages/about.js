@@ -18,12 +18,12 @@ const About = () => {
                 <Box borderRadius={8} maxWidth="100%" bg='blackAlpha.500' ht={5} paddingTop={8}>
                     <Heading><Container textAlign="center">Mission and Vision</Container></Heading>
                     <Container maxWidth="100%">
-                        <HStack padding={10} maxWidth="100%" justifyContent="space-around">
+                        <HStack padding={10} maxWidth="100%" justifyContent="space-around" gap={2}>
                             <Container paddingBottom={5} borderRadius={5} bg="whiteAlpha.400" textAlign="center"><Heading paddingBottom={4} size="lg">MISSION</Heading>
                                 <Box>To help non-profits and social enterprises overcome challenges for the greatest possible social impact by providing affordable and high quality consulting services.</Box>
                             </Container>
                             <Container paddingBottom={5} borderRadius={5} bg="whiteAlpha.400" textAlign="center"><Heading paddingBottom={4} size="lg">VISION</Heading>
-                                <Box>To ensure that the movement towards resolving pressing world issues such as poverty, global warming, etc. is unfettered by economic or social constraints and thereby develop the next generation of leaders.</Box>
+                                <Box>To ensure that the movement towards resolving pressing world issues such as poverty, global warming, etc. is unfettered by constraints and thereby develop the next generation of leaders.</Box>
                             </Container>
                         </HStack>
                     </Container>
