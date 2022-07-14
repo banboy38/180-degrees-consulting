@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion'
 import theme from '../libs/theme'
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
+import Header from "../components/header"
 //import {  } from '@chakra-ui/core';
 
 function Website({ Component, pageProps,router}) {
@@ -11,10 +12,10 @@ function Website({ Component, pageProps,router}) {
       <ChakraProvider theme={theme} resetCSS={true}>
             <CSSReset/>          
             <Layout router={router}>
-                <AnimatePresence exitBeforeEnter initial={true}>
-                <CSSReset/>  
+                <AnimatePresence exitBeforeEnter initial={true}> 
+                    <Header/>
+                    <Navbar path={router.asPath}/>
                     <Component {...pageProps} key ={router.route}/>
-                    <Navbar/>
                     <Footer/>
                 </AnimatePresence>
             </Layout>

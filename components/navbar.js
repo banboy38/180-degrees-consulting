@@ -36,22 +36,7 @@ const LinkItem = ({ href, path, children}) =>{
   )
 }
 
-
 const Links = ['Dashboard', 'Projects', 'Team'];
-
-// const NavLink = ({ children }) => (
-//   <Link
-//     px={2}
-//     py={1}
-//     rounded={'md'}
-//     _hover={{
-//       textDecoration: 'none',
-//       bg: useColorModeValue('gray.200', 'gray.700'),
-//     }}
-//     href={'/'}>
-//     {children}
-//   </Link>
-// );
 
 const Navbar = props => {
   const { isOpen, onOpen, onClose } = useDisclosure();

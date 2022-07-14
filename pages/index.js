@@ -19,24 +19,24 @@ const Page = () => {
     </div>
     
     <div>
-      <Container maxHeight="lg" maxWidth="container.xl">
+      <Container textAlign="center" maxHeight="lg" maxWidth="container.xl">
           <Heading>
               Who we are...
           </Heading>
-          <Box maxWidth="container.md" paddingTop={5}>180 Degrees provides socially conscious organizations around the world with very high quality, extremely affordable consulting services. We work with organizations to develop innovative, practical and sustainable solutions to whatever challenges they’re facing.</Box>
+          <Box maxWidth="container.xl" paddingX={{base:'none',md:"72"}} paddingTop={5}>180 Degrees provides socially conscious organizations around the world with very high quality, extremely affordable consulting services. We work with organizations to develop innovative, practical and sustainable solutions to whatever challenges they’re facing.</Box>
       </Container></div>
     </Container>
     <div>
-      <Container paddingTop={10} maxWidth="container.xl" textAlign="center" justifyContent="center">
-        <Heading justifyContent="center" paddingBottom={3}>Our Services</Heading>
+      <Container maxWidth="container.xl" textAlign="center" justifyContent="center">
+        <Heading justifyContent="center" paddingY={5}>Our Services</Heading>
         We offer a plethora of services, including but not limited to...
-        <HStack maxWidth="container.xl" justifyContent="center" padding={5}>
-          <Grid alignContent="center"><Box textAlign="center"><Container><Img src="/process_rocket.png"></Img></Container><Heading paddingBottom={5}>Market Research</Heading>We conduct detailed market research, competitor analysis and benchmarking to help our clients gain an in-depth understanding of the sectoral landscape, identify opportunities and navigate challenges.</Box></Grid>
+        <Stack direction={{base:'column',md:'row'}} maxWidth="container.xl" justifyContent="center" padding={5}>
           <Grid alignContent="center"><Box textAlign="center"><Container><Img src="/process_rocket.png"></Img></Container><Heading paddingBottom={5}>Branding &amp; Marketing</Heading>We develop innovative branding and marketing campaigns which portray our clients’ work in the best way possible and maximise their reach.</Box></Grid>
+          <Grid alignContent="center"><Box textAlign="center"><Container><Img src="/process_rocket.png"></Img></Container><Heading paddingBottom={5}>Market Research</Heading>We conduct detailed market research, competitor analysis and benchmarking to help our clients gain an in-depth understanding of the sectoral landscape, identify opportunities and navigate challenges.</Box></Grid>
           <Grid alignContent="center"><Box textAlign="center"><Container><Img src="/process_rocket.png"></Img></Container><Heading paddingBottom={5}>Financial Planning</Heading>We formulate funding, revenue generation and cost-cutting strategies thereby helping our clients build financially sustainable organisations.</Box></Grid>
           <Grid alignContent="center"><Box textAlign="center"><Container><Img src="/process_rocket.png"></Img></Container><Heading paddingBottom={5}>Human Resource Management</Heading>We help our clients attract and retain top talent by devising employee/volunteer recruitment and management strategies.</Box></Grid>
           <Grid alignContent="center"><Box textAlign="center"><Container><Img src="/process_rocket.png"></Img></Container><Heading paddingBottom={5}>Process Optimization</Heading>We identify key performance indicators and help our clients optimize business processes to maximize their operational efficiency.</Box></Grid>
-        </HStack>
+        </Stack>
       </Container>
     </div>
     </div>
