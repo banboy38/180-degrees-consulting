@@ -44,22 +44,22 @@ import {
   
   export default function Footer(props) {
     return (
-      <Container maxWidth="container.xl" borderBottomRadius="10px"
+      <Container maxWidth="container.md" borderBottomRadius="10px"
         bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}
           maxW={'6xl'}
-          py={4}
+          py={2}
           spacing={4}
           justify={'center'}
           align={'center'}>
           <Logo />
           <Stack direction={'row'} spacing={12}>
-            <Link href={'#'}>HOME</Link>
-            <Link href={'#'}>ABOUT</Link>
-            <Link href={'#'}>BLOG</Link>
-            <Link href={'#'}>CONTACT</Link>
+            <Link href={'/'}>HOME</Link>
+            <Link href={'/about'}>ABOUT</Link>
+            <Link href={'/blog'}>BLOG</Link>
+            <Link href={'/contact'}>CONTACT</Link>
           </Stack>
         </Container>
   

@@ -13,7 +13,7 @@ const About = () => {
     return(
         <>
             <Container paddingTop={32} paddingBottom={5} maxWidth="container.xl" bg="whiteAlpha.50">
-                <Box paddingBottom={5} textAlign="center"><Heading textColor={'yellow'}>ABOUT US</Heading></Box>
+                <Box paddingBottom={5} textAlign="center"><Heading>ABOUT US</Heading></Box>
 
                 <Box borderRadius={8} maxWidth="100%" bg='blackAlpha.500' ht={5} paddingTop={8}>
                     <Heading><Container textAlign="center">Mission and Vision</Container></Heading>

@@ -6,16 +6,17 @@ import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import Head from "next/head"
+import Router from "next/router"
 //import {  } from '@chakra-ui/core';
 
 function Website({ Component, pageProps,router}) {
   return (
       <ChakraProvider theme={theme} resetCSS={true}>
-            <Layout router={router}>
+            <Layout router={Router}>
                 <AnimatePresence exitBeforeEnter initial={true}> 
                     <Header/>
                     <Navbar path={router.asPath}/>
-                    <Component {...pageProps} key ={router.route}/>
+                    <Component {...pageProps}/>
                     <Footer/>
                 </AnimatePresence>
             </Layout>

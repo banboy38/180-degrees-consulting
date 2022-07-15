@@ -7,12 +7,12 @@ import {
     HStack,
     IconButton,
     Img,
+    Link,
     useBreakpointValue,
     useColorModeValue,
   } from '@chakra-ui/react'
   import * as React from 'react'
   import { FiMenu } from 'react-icons/fi'
-
   
   export const Header = () => {
     const isDesktop = useBreakpointValue({ base: false, lg: true })
@@ -24,7 +24,7 @@ import {
         
               
                 <Flex justify="center" flex="1" gap={3}>
-                  <Img src='/logo.png' alt='logo'></Img>
+                <Link href="/"><Img src='/logo.png' alt='logo'></Img></Link>
                 </Flex>
               
             </HStack>

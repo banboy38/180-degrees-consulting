@@ -12,7 +12,7 @@ const Main = ({children,router}) => {
                     <title>180DC - BIT Mesra</title>
                 </Head>
                 <Navbar path={router.asPath}/>
-                <Container>
+                <Container >
                     {children}
                 </Container>
             </Box>
