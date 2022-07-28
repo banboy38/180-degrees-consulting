@@ -8,19 +8,22 @@ import { ImageSliderData } from '../components/imagesliderdata'
 const Page = () => {
   return (
     <>
-    <div>
+    <Container maxWidth="container.xl">
     <Container maxWidth="container.md">
-    <div>
-    <ImageSlider slides={ImageSliderData}/>
-    </div>
     
-    <div>
-      <Container textAlign="center" maxHeight="lg" maxWidth="container.md">
+    <ImageSlider slides={ImageSliderData}/>
+    
+    
+      <Container textAlign="center" maxHeight="lg" maxWidth="container.lg">
           <Heading>
               Who we are...
           </Heading>
-          <Box maxWidth="container.md" paddingX={{base:'none',md:"32"}} paddingTop={5}>180 Degrees provides socially conscious organizations around the world with very high quality, extremely affordable consulting services. We work with organizations to develop innovative, practical and sustainable solutions to whatever challenges they’re facing.</Box>
-      </Container></div>
+          <Box maxWidth="container.lg" paddingX={{base:'none',md:"32"}} paddingTop={5}>
+              <Box>Birla Institute of Technology, Mesra, is one of the country's most prestigious and acclaimed educational universities. It was founded and established by the ingenious industrialist, B.M. Birla over more than six decades ago and has been creating ripples of success ever since. It has churned out professionals in various fields: both technological and cultural. The university has one of the strongest alumni bases of any college in the eastern zone. The institute has always centred its focus on the welfare of its students and accordingly taken action for their nurture and education.</Box>
+              <Spacer/>
+              <Container>BIT Mesra had been conceived with a vision to be recognized as a world-class learning institution for engineering and technology. Now, it has moved beyond the fulfilment of a scholastic promise to re-defining education in the new age through the creation of aptitude and comprehensive intelligence.</Container>
+          </Box>
+      </Container>
     </Container>
     <div>
       <Container maxWidth="container.md" textAlign="center" justifyContent="center">
@@ -41,7 +44,7 @@ const Page = () => {
 
       </Container>
     </div>
-    </div>
+    </Container>
     </>
   )
 }

@@ -12,6 +12,12 @@ import Router from "next/router"
 function Website({ Component, pageProps,router}) {
   return (
       <ChakraProvider theme={theme} resetCSS={true}>
+        <Head>
+        <style href="/dist/output.css" rel="stylesheet"/>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                    <title>180DC - BIT Mesra</title>
+        </Head>
             <Layout router={Router}>
                 <AnimatePresence exitBeforeEnter initial={true}> 
                     <Header/>

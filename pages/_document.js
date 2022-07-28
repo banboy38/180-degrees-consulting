@@ -9,10 +9,7 @@ export default class Document extends NextDocument {
       return(
         <Html lang="en">
             <Head>
-            <style href="/dist/output.css" rel="stylesheet"/>
-            
-            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-                    <title>180DC - BIT Mesra</title>
+      
             </Head>
             <body>
                 <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
