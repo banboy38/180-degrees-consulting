@@ -48,9 +48,9 @@ const Navbar = props => {
         <VStack m={0} p={0} justifyContent="left" gap={2} spacing="2em">
           <Spacer/>        
           <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/about" path={path}>ABOUT</LinkItem></Container><Spacer/>
-          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/" path={path}>PROJECTS</LinkItem></Container><Spacer/>
+          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/contact" path={path}>PROJECTS</LinkItem></Container><Spacer/>
           <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/works" path={path}>TEAM</LinkItem></Container><Spacer/>
-          <ThemeToggleButton/><Spacer/>
+          <Spacer/>
         </VStack>
       </Flex>
     </>
