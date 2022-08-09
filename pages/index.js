@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 import { Container,Flex, Text, useColorMode, Button,IconButton, Box, Stack, Spacer, Heading, HStack, Img, Grid,GridItem, VStack, Center} from '@chakra-ui/react'
 import ImageSlider from '../components/imageslider'
 import { ImageSliderData } from '../components/imagesliderdata'

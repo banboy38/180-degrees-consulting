@@ -1,10 +1,13 @@
 import {extendTheme,useColorModeValue} from "@chakra-ui/react"
 import {mode} from '@chakra-ui/theme-tools';
+
 const styles = {
     global: props => ({
             body: {
-                bg: '#e9ebed'
+                bg: mode('#e9ebed','#2f2d31')(props),
+                color: mode('#2f2d31', 'fafffd')(props)
             }
+            
     })
 }
 const components = {
@@ -23,7 +26,7 @@ const components = {
     },
     Link: {
         baseStyle: props => ({
-            color: mode('#3fc138', '#39235A')(props),
+            color: mode('#3fc138', '#2F2D31')(props),
             textUnderlineOffset: 3
         })
     }
@@ -38,8 +41,8 @@ const colors = {
 }
 
 const config = {
-    initialColorMode: 'dark',
-    useSystemColorMode:true
+    initialColorMode: 'light',
+    useSystemColorMode:false,
 }
 
 const theme = extendTheme({

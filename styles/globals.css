@@ -3,6 +3,3 @@
 @tailwind utilities;
 
 
-.nav-content{
-  transform: rotate(180deg);
-}

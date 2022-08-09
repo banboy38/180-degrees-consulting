@@ -44,8 +44,8 @@ import {
   
   export default function Footer(props) {
     return (
-      <Container maxWidth="container.md" borderBottomRadius="10px"
-        bg={useColorModeValue('gray.50', 'gray.900')}
+      <Container maxWidth="100%" borderBottomRadius="10px"
+        bg={useColorModeValue('#2f2d31', '#93C420')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}
