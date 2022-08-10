@@ -29,7 +29,7 @@ const LinkItem = ({ href, path, children}) =>{
   const inactiveColor = useColorModeValue('gray2000, whiteAlpha.900')
   return(
       <NextLink href={href}>
-          <Link px={2} py={1} rounded={'md'} _hover={{textDecoration: 'none', bg: useColorModeValue('gray.200', 'gray.700'),}}>
+          <Link px={2} py={1} rounded={'md'}>
               {children}
           </Link>
       </NextLink>
@@ -43,14 +43,15 @@ const Navbar = props => {
   const path = props
   return (
     <>
-      <Flex display={{base:'none',md:"flex"}} zIndex={5} m={0} p={0} bg={useColorModeValue("gray.800","gray.900")} direction={{base:'column',md:'row'}} position="fixed" top="0" right="0" h="100%">
+      <Flex display={{base:'none',md:"flex"}} zIndex={5} m={0} p={0} bg={useColorModeValue("#2f2d31","#93C420")} direction={{base:'column',md:'row'}} position="fixed" top="0" right="0" h="100%">
       {/* <Image w="200px" h="60px" src="./logo.png" alt='logo'/> */}
-        <VStack m={0} p={0} justifyContent="left" gap={2} spacing="2em">
-          <Spacer/>        
-          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/about" path={path}>ABOUT</LinkItem></Container><Spacer/>
-          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/" path={path}>PROJECTS</LinkItem></Container><Spacer/>
-          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/works" path={path}>TEAM</LinkItem></Container><Spacer/>
-          <ThemeToggleButton/><Spacer/>
+        <VStack m={0} p={0} justifyContent="space-around" gap={2} paddingY={10} spacing="2em">   
+          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/" path={path}>HOME</LinkItem></Container>  
+          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/about" path={path}>ABOUT</LinkItem></Container>
+          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/contact" path={path}>CONTACT</LinkItem></Container>
+          <Container m={0} p={0} transform="rotate(90deg)"><LinkItem href="/works" path={path}>TEAM</LinkItem></Container>
+          <ThemeToggleButton/>
+     
         </VStack>
       </Flex>
     </>

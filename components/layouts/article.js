@@ -1,3 +1,4 @@
+import { Box, Container } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import Head from 'next/head'
 
@@ -21,7 +22,7 @@ const Layout = ({children,title}) => (
                     <title>180DC BITM - {title}</title>
                  </Head>
                 )}
-                {children}
+                <Box marginRight={{base:'none',md:'22'}}><Container paddingBottom={2} maxWidth="container.md" borderRadius={10} padding={0}>{children}</Container></Box>
             </>
     </motion.article>
 )

@@ -44,22 +44,22 @@ import {
   
   export default function Footer(props) {
     return (
-      <Container maxWidth="container.xl" borderBottomRadius="10px"
-        bg={useColorModeValue('gray.50', 'gray.900')}
+      <Container maxWidth="container.lg" borderBottomRadius="10px"
+        bg={useColorModeValue('#2f2d31', '#93C420')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}
           maxW={'6xl'}
-          py={4}
+          py={2}
           spacing={4}
           justify={'center'}
           align={'center'}>
           <Logo />
           <Stack direction={'row'} spacing={12}>
-            <Link href={'#'}>HOME</Link>
-            <Link href={'#'}>ABOUT</Link>
-            <Link href={'#'}>BLOG</Link>
-            <Link href={'#'}>CONTACT</Link>
+            <Link href={'/'}>HOME</Link>
+            <Link href={'/about'}>ABOUT</Link>
+            <Link href={'/blog'}>BLOG</Link>
+            <Link href={'/contact'}>CONTACT</Link>
           </Stack>
         </Container>
   
@@ -74,11 +74,12 @@ import {
             direction={{ base: 'column', md: 'row' }}
             spacing={4}
             justify={{ base: 'center', md: 'space-between' }}
-            align={{ base: 'center', md: 'center' }}>
-            <Text>© 2022 Birla Institute of Technology. All rights reserved</Text>
-            <Stack direction={'row'} spacing={6}>
+            align={{ base: 'center', md: 'center' }}
+            color={useColorModeValue('gray.200', 'gray.700')}>
+            <Text>© 2022 Birla Institute of Technology.</Text>
+            <Stack direction={'row'} spacing={6} color={useColorModeValue('#93c420', '#2f2d31')}>
               <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
+                <FaTwitter/>
               </SocialButton>
               <SocialButton label={'YouTube'} href={'#'}>
                 <FaYoutube />
