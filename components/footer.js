@@ -44,7 +44,7 @@ import {
   
   export default function Footer(props) {
     return (
-      <Container maxWidth="100%" borderBottomRadius="10px"
+      <Container maxWidth="container.lg" borderBottomRadius="10px"
         bg={useColorModeValue('#2f2d31', '#93C420')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
@@ -74,11 +74,12 @@ import {
             direction={{ base: 'column', md: 'row' }}
             spacing={4}
             justify={{ base: 'center', md: 'space-between' }}
-            align={{ base: 'center', md: 'center' }}>
-            <Text>© 2022 Birla Institute of Technology. All rights reserved</Text>
-            <Stack direction={'row'} spacing={6}>
+            align={{ base: 'center', md: 'center' }}
+            color={useColorModeValue('gray.200', 'gray.700')}>
+            <Text>© 2022 Birla Institute of Technology.</Text>
+            <Stack direction={'row'} spacing={6} color={useColorModeValue('#93c420', '#2f2d31')}>
               <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
+                <FaTwitter/>
               </SocialButton>
               <SocialButton label={'YouTube'} href={'#'}>
                 <FaYoutube />

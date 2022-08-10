@@ -13,7 +13,7 @@ function Website({ Component, pageProps,router}) {
   return (
       <ChakraProvider theme={theme} resetCSS={true}>
         <Head>
-        <style href="/styles/globals.css" rel="stylesheet"/>
+        <style href="/styles/Home.module.css" rel="stylesheet"/>
             
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                     <title>180DC - BIT Mesra</title>

@@ -21,7 +21,10 @@ const components = {
                 textDecorationThickness: 4,
                 marginTop: 3,
                 marginBottom: 4
-            }
+            },
+            'title-heading': props => ({
+                color: mode('#3C91E6','#93c420')(props)
+            })
         }
     },
     Link: {

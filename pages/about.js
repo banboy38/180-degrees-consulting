@@ -1,19 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import { Container, Text, useColorMode, Button,IconButton, Box, Stack, Spacer, Heading, HStack, Img, Grid} from '@chakra-ui/react'
-import ThemeToggleButton from '../components/theme-toggle-button'
-import Navbar from '../components/navbar'
-import ImageSlider from '../components/imageslider'
-import { ImageSliderData } from '../components/imagesliderdata'
-import { Icon } from '@chakra-ui/icons'
-
 
 const About = () => {
     return(
         <>
-            <Container paddingTop={32} paddingBottom={5} maxWidth="container.xl" bg="whiteAlpha.50">
-                <Box paddingBottom={5} textAlign="center"><Heading>ABOUT US</Heading></Box>
+            <Container paddingTop={5} paddingBottom={5} maxWidth="container.xl" bg="whiteAlpha.50">
+                <Box paddingBottom={5} textAlign="center"><Heading variant='title-heading'>ABOUT US</Heading></Box>
                 <Text paddingBottom={5} textAlign='center'>180 DC, BIT Mesra is a student-run consulting services provider being mentored by MBB and Big 4 consultants.</Text>
                 <Text paddingBottom={5} textAlign='center'>180 DC BIT Mesra provides global networking opportunities, real-time consulting projects and novel research contributions. We work with organisations to augment ingenious, pragmatic, and sustainable solutions to whatever impediments they face.</Text>
                 <Text paddingBottom={5} textAlign='center'>180 DC yokes the untapped capabilities of crème de la crème undergraduate students with the unmet needs of socially conscious organisations. 
